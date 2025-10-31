@@ -75,10 +75,9 @@ nav ul li a:hover {
     transform: translateY(-80px);
 }
 
-/* ---------- About Section ---------- */
 
 .about {
-    background-color: #0d0d0d; /* subtle contrast against pure black */
+    background-color: #0d0d0d;
     padding: 100px 0;
     text-align: center;
 }
@@ -115,4 +114,59 @@ nav ul li a:hover {
     background-color: darkcyan;
     margin: 0 auto 20px;
     border-radius: 2px;
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .header-text {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20%;
+        font-size: 24px;
+    }
+
+    .header-text img {
+        transform: translateY(0);
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-text {
+        font-size: 20px;
+        margin-top: 25%;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
 }

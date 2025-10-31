@@ -95,6 +95,7 @@ nav ul li a.active {
   transition: 0.3s ease;
 }
 
+<<<<<<< HEAD
 .header-text img:hover {
   transform: scale(1.05);
 }
@@ -103,6 +104,13 @@ nav ul li a.active {
   background-color: #0d0d0d;
   padding: 100px 0;
   text-align: center;
+=======
+
+.about {
+    background-color: #0d0d0d;
+    padding: 100px 0;
+    text-align: center;
+>>>>>>> bcf6c8a807f392908524f9ae387120aba0d35c71
 }
 
 .about .container {
@@ -143,6 +151,7 @@ nav ul li a.active {
   letter-spacing: 2px;
 }
 
+<<<<<<< HEAD
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -302,3 +311,59 @@ footer {
     font-size: 30px;
   }
 }
+=======
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .header-text {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20%;
+        font-size: 24px;
+    }
+
+    .header-text img {
+        transform: translateY(0);
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-text {
+        font-size: 20px;
+        margin-top: 25%;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+}
+>>>>>>> bcf6c8a807f392908524f9ae387120aba0d35c71
